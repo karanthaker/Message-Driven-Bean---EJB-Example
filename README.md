@@ -6,8 +6,8 @@ A simple example to illustrate that message-driven javabeans can be used to impl
 
 When these 2 classes are used to build a netbeans or ant project, we get a simple messaging application. It has mainly two components:
 
-<code>SimpleMessageClient:</code> An application that sends several messages to a queue.
-<code>SimpleMessageBean:</code> A message-driven bean that asynchronously receives and processes the messages that are sent to the queue. 
+<code>SimpleMessageClient:</code> An application that sends several messages to a queue.<br>
+<code>SimpleMessageBean:</code> A message-driven bean that asynchronously receives and processes the messages that are sent to the queue. <br>
 
 
 The client class sends messages to the queue that the bean class listens to. The client starts by injecting the connection factory and queue resources. Thereafter, it creates the connection, session and message producer. Finally, the client sends multiple messages to the queue. 
